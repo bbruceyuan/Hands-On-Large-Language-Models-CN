@@ -1,91 +1,43 @@
-﻿# Hands-On Large Language Models CN(ZH)
+﻿# Hands-On Large Language Models CN(ZH)  -- 动手学大模型
 
-> 这是中文版本的 hands-on LLMs
+这本书（Hands-On Large Language Models）原作者是 [Jay Alammar](https://www.linkedin.com/in/jalammar/)，[Maarten Grootendorst](https://www.linkedin.com/in/mgrootendorst/)。 英文好的同学强烈推荐支持原书，访问 [原书地址](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) 。
 
-<a href="https://www.linkedin.com/in/jalammar/"><img src="https://img.shields.io/badge/Follow%20Jay-blue.svg?logo=linkedin"></a>
-<a href="https://www.linkedin.com/in/mgrootendorst/"><img src="https://img.shields.io/badge/Follow%20Maarten-blue.svg?logo=linkedin"></a>
+> 这是中文版本的 hands-on LLMs，推荐大家访问原书。
+
+## 中文版有什么特点
+- 对代码进行了更详细的注释，并且在**部分内容加上自己的理解**。
+- 有更适合国内网络环境使用的 Notebook 版本，不需要翻墙可以使用（主要是更快）
+  - 这里我也是为了免费用了 [openbayes](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) 的 GPU，注册可以送 5 小时 CPU 和 3 小时 4090 GPU，如果用[我的链接注册](https://openbayes.com/console/signup?r=bbruceyuan_1o6b)，我们都能多一个小时。能薅一点牛毛十一点是一点，目标是免费录完这次教程。
+- 配套的中文 [B站视频](https://www.bilibili.com/video/BV16Am3Y4ES3/), [YouTube 视频](https://www.youtube.com/watch?v=BvdAH38BCe8) 讲解。
+
+## 目录
+
+建议海外用户通过 Google Colab 运行所有示例，以获得最简单的设置。Google Colab 允许您免费使用具有 16GB 显存的 T4 GPU。所有示例主要使用 Google Colab 构建和测试，因此它应该是更稳定的平台。然而，任何其他云提供商都应该可以工作。 
+
+国内用户如果想要运行，最好还是用[中文可运行 Notebook](https://openbayes.com/console/signup?r=bbruceyuan_1o6b)，这样不需要翻墙，国内网络环境访问 Google Colab 可能比较慢。
 
 
-> 这是中文版本的 hands-on LLMs
-
-
-Welcome! In this repository you will find the code for all examples throughout the book [Hands-On Large Language Models](https://www.amazon.com/Hands-Large-Language-Models-Understanding/dp/1098150961) written by [Jay Alammar](https://www.linkedin.com/in/jalammar/) and [Maarten Grootendorst](https://www.linkedin.com/in/mgrootendorst/) which we playfully dubbed: <br> 
-
-<p align="center"><b><i>"The Illustrated LLM Book"</i></b></p>
-
-Through the visually educational nature of this book and with **over 250 custom made figures**, learn the practical tools and concepts you need to use Large Language Models today!
-
-<a href="https://www.amazon.com/Hands-Large-Language-Models-Understanding/dp/1098150961"><img src="images/book_cover.png" width="50%" height="50%"></a>
-
-<br>
-
-The digital version of the book is available on:
-
-* [Amazon](https://www.amazon.com/Hands-Large-Language-Models-Understanding/dp/1098150961)
-* [O'Reilly](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
-* [Kindle](https://www.amazon.com/Hands-Large-Language-Models-Alammar-ebook/dp/B0DGZ46G88/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)
-* [Barnes and Noble](https://www.barnesandnoble.com/w/hands-on-large-language-models-jay-alammar/1145185960)
-
-Note that the book is sent to the printer and will be released in print format in the coming weeks!
-
-## Table of Contents
-
-We advise to run all examples through Google Colab for the easiest setup. Google Colab allows you to use a T4 GPU with 16GB of VRAM for free. All examples were mainly built and tested using Google Colab, so it should be the most stable platform. However, any other cloud provider should work. 
-
-| Chapter  | Notebook  |
-|---|---|
-| Chapter 1: Introduction to Language Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter01/Chapter%201%20-%20Introduction%20to%20Language%20Models.ipynb)   |
-| Chapter 2: Tokens and Embeddings  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter02/Chapter%202%20-%20Tokens%20and%20Token%20Embeddings.ipynb)  |
-| Chapter 3: Looking Inside Transformer LLMs  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter03/Chapter%203%20-%20Looking%20Inside%20LLMs.ipynb)  |
-| Chapter 4: Text Classification  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter04/Chapter%204%20-%20Text%20Classification.ipynb)  |
-| Chapter 5: Text Clustering and Topic Modeling  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter05/Chapter%205%20-%20Text%20Clustering%20and%20Topic%20Modeling.ipynb)  |
-| Chapter 6: Prompt Engineering  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter06/Chapter%206%20-%20Prompt%20Engineering.ipynb)  |
-| Chapter 7: Advanced Text Generation Techniques and Tools  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter07/Chapter%207%20-%20Advanced%20Text%20Generation%20Techniques%20and%20Tools.ipynb)  |
-| Chapter 8: Semantic Search and Retrieval-Augmented Generation  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter08/Chapter%208%20-%20Semantic%20Search.ipynb)  |
-| Chapter 9: Multimodal Large Language Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter09/Chapter%209%20-%20Multimodal%20Large%20Language%20Models.ipynb)  |
-| Chapter 10: Creating Text Embedding Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter10/Chapter%2010%20-%20Creating%20Text%20Embedding%20Models.ipynb)  |
-| Chapter 11: Fine-tuning Representation Models for Classification  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter11/Chapter%2011%20-%20Fine-Tuning%20BERT.ipynb)  |
-| Chapter 12: Fine-tuning Generation Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter12/Chapter%2012%20-%20Fine-tuning%20Generation%20Models.ipynb)  |
+| 章节 | Google Colab | 中文 Notebook | 视频讲解(可点击)|
+|---|---|------|------|
+| 第一章: 介绍大模型  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter01/Chapter%201%20-%20Introduction%20to%20Language%20Models.ipynb)   | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/bbruceyuan/jobs/635ogjxzfyky/output?path=/Hands-On-Large-Language-Models-CN/chapter01/Chapter+1+-+Introduction+to+Language+Models.ipynb) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV16Am3Y4ES3)](https://www.bilibili.com/video/BV16Am3Y4ES3/)<br />[![Youtube](https://img.shields.io/youtube/views/BvdAH38BCe8?style=social)](https://www.youtube.com/watch?v=BvdAH38BCe8) |
+| 第二章: Tokens and Embeddings  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter02/Chapter%202%20-%20Tokens%20and%20Token%20Embeddings.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/bbruceyuan/jobs/635ogjxzfyky/output?path=%2FHands-On-Large-Language-Models-CN%2Fchapter02%2FChapter+2+-+Tokens+and+Embeddings.ipynb) | 在录了~ |
+| 第三章: Looking Inside Transformer LLMs  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter03/Chapter%203%20-%20Looking%20Inside%20LLMs.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/bbruceyuan/jobs/635ogjxzfyky/output?path=%2FHands-On-Large-Language-Models-CN%2Fchapter03%2FChapter+3+-+Looking+Inside+Transformer+LLMs.ipynb) | 在录了~ |  
+| 第四章: Text Classification  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter04/Chapter%204%20-%20Text%20Classification.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/bbruceyuan/jobs/635ogjxzfyky/output?path=%2FHands-On-Large-Language-Models-CN%2Fchapter04%2FChapter+4+-+Text+Classification.ipynb) | 在录了~ |
+| 第五章: Text Clustering and Topic Modeling  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter05/Chapter%205%20-%20Text%20Clustering%20and%20Topic%20Modeling.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第六章: Prompt Engineering  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter06/Chapter%206%20-%20Prompt%20Engineering.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第七章: Advanced Text Generation Techniques and Tools  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter07/Chapter%207%20-%20Advanced%20Text%20Generation%20Techniques%20and%20Tools.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |  
+| 第八章: Semantic Search and Retrieval-Augmented Generation  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter08/Chapter%208%20-%20Semantic%20Search.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第九章: Multimodal Large Language Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter09/Chapter%209%20-%20Multimodal%20Large%20Language%20Models.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第十章: Creating Text Embedding Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter10/Chapter%2010%20-%20Creating%20Text%20Embedding%20Models.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第十一章: Fine-tuning Representation Models for Classification  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter11/Chapter%2011%20-%20Fine-Tuning%20BERT.ipynb)  |[![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) | 在录了~ |
+| 第十二章: Fine-tuning Generation Models  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HandsOnLLM/Hands-On-Large-Language-Models/blob/main/chapter12/Chapter%2012%20-%20Fine-tuning%20Generation%20Models.ipynb)  | [![中文可运行 Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) |在录了~ |
 
 > [!TIP]
 > You can check the [setup](.setup/) folder for a quick-start guide to install all packages locally and you can check the [conda](.setup/conda/) folder for a complete guide on how to setup your environment, including conda and PyTorch installation.
 > Note that the depending on your OS, Python version, and dependencies your results might be slightly differ. However, they
 > should this be similar to the examples in the book. 
 
-
-## Reviews
-
-> "*Jay and Maarten have continued their tradition of providing beautifully illustrated and insightful descriptions of complex topics in their new book. Bolstered with working code, timelines, and references to key papers, their book is a valuable resource for anyone looking to understand the main techniques behind how Large Language Models are built.*"
->    
-> **Andrew Ng** - founder of [DeepLearning.AI](https://www.deeplearning.ai/)
-
----
-
-> "*This is an exceptional guide to the world of language models and their practical applications in industry. Its highly-visual coverage of generative, representational, and retrieval applications of language models empowers readers to quickly understand, use, and refine LLMs. Highly recommended!*"
->
-> **Nils Reimers** - Director of Machine Learning at Cohere | creator of [sentence-transformers](https://github.com/UKPLab/sentence-transformers)
-
----
-
-> "*I can’t think of another book that is more important to read right now. On every single page, I learned something that is critical to success in this era of language models.*"
-> 
-> **Josh Starmer** - [StatQuest](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
-
----
-
-> "*If you’re looking to get up to speed in everything regarding LLMs, look no further! In this wonderful book, Jay and Maarten will take you from zero to expert in the history and latest advances in large language models. With very intuitive explanations, great real-life examples, clear illustrations, and comprehensive code labs, this book lifts the curtain on the complexities of transformer models, tokenizers, semantic search, RAG, and many other cutting-edge technologies. A must read for anyone interested in the latest AI technology!*"
-> 
-> **Luis Serrano, PhD** - Founder and CEO of [Serrano Academy](https://www.youtube.com/@SerranoAcademy)
-
----
-
-> "*Hands-On Large Language Models brings clarity and practical examples to cut through the hype of AI. It provides a wealth of great diagrams and visual aids to supplement the clear explanations. The worked examples and code make concrete what other books leave abstract. The book starts with simple introductory beginnings, and steadily builds in scope. By the final chapters, you will be fine-tuning and building your own large language models with confidence.*"
->
-> **Leland McInnes** - Researcher at the Tutte Institute for Mathematics and Computing | creator of [UMAP](https://github.com/lmcinnes/umap) and [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan)
-
----
-
-## Additional Resources
+## 其他资源
 
 We attempted to put as much information into the book without it being overwhelming. However, even with a 400-page book there is still much to discover! If you are interested in similar illustrated/visual guides we created, these might be of interest to you:
 
