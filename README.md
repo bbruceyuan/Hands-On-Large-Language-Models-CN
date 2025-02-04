@@ -12,7 +12,7 @@
 - 对代码进行了更详细的注释，并且在**部分内容加上自己的理解**。
 - 有更适合国内网络环境使用的 Notebook 版本，不需要翻墙可以使用（主要是更快）
   - 这里我也是为了免费用了 [openbayes](https://openbayes.com/console/signup?r=bbruceyuan_1o6b) 的 GPU，注册可以送 5 小时 CPU 和 3 小时 4090 GPU，如果用[我的链接注册](https://openbayes.com/console/signup?r=bbruceyuan_1o6b)，我们都能多一个小时。能薅一点牛毛是一点是一点，目标是免费录完这次教程。
-  - 另外一个非常牛逼的点：我可以用 vscode/jupyter notebook 链接，不用每次都配置环境，非常方便。
+  - 如果你不太喜欢 notebook 类型，更喜欢实验室这种 Linux 类型的环境，那么推荐你使用  [AIStackDC](https://aistackdc.com/phone-register?invite_code=D872A9) 算力平台，可以直接 ssh，配置好之后就是一个独立的开发机，如果使用[我的邀请链接](https://aistackdc.com/phone-register?invite_code=D872A9)，可以额外获得 2 张 1 折优惠券（5 小时）和 3 张 5 折优惠券（36 小时），这样前一百个小时基本免费吧。
 - **配套的中文视频讲解**。
   - [YouTube 视频](https://www.youtube.com/watch?v=BvdAH38BCe8) 
   - [B站视频-chaofa用代码打点酱油](https://www.bilibili.com/video/BV16Am3Y4ES3/)
