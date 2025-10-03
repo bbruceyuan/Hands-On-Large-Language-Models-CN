@@ -1,0 +1,33 @@
+[project]
+name = "hands-on-large-language-models-cn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.27",
+    "langchain-chroma>=0.2.6",
+    "langchain-community>=0.3.30",
+    "langchain-deepseek>=0.1.4",
+    "langchain-openai>=0.3.34",
+    "langgraph>=0.6.8",
+]
+[tool.ruff]
+# 将行长限制设置为 88 个字符
+line-length = 88
+# 允许 Ruff 修复所有可修复的违规行为
+fixable = ["ALL"]
+
+[tool.ruff.lint]
+# 选择要启用的规则集。 "E" 和 "F" 分别是 pycodestyle 和 Pyflakes 的规则。
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.format]
+# 使用双引号
+quote-style = "double"
+# 使用空格进行缩进
+indent-style = "space"
+# 不跳过神奇的尾随逗号
+skip-magic-trailing-comma = false
+# 自动检测行尾
+line-ending = "auto"
