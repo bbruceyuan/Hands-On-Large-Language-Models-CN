@@ -2,6 +2,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
+from langchain.schema import HumanMessage
 
 # 1. 加载已有的向量数据库
 embeddings = OpenAIEmbeddings(
@@ -47,9 +48,11 @@ llm = ChatOpenAI(
 final_prompt = prompt.format(context=context, question=query)
 
 print(f"最终的 Prompt 内容：{final_prompt}")
-response = llm.predict(final_prompt)
+
+messages = [HumanMessage(content=final_prompt)]
+response = llm.invoke(messages)
 
 # 7. 输出结果
 print(f"问题: {query}")
-print(f"回答: {response}")
+print(f"回答: {response.content}")
 print(f"\n参考文档数量: {len(docs)}")
