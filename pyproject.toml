@@ -11,6 +11,9 @@ dependencies = [
     "langchain-deepseek>=0.1.4",
     "langchain-openai>=0.3.34",
     "langgraph>=0.6.8",
+    "numpy>=2.3.3",
+    "torch>=2.8.0",
+    "transformers>=4.57.0",
 ]
 [tool.ruff]
 # 将行长限制设置为 88 个字符
