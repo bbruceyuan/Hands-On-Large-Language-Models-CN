@@ -55,11 +55,11 @@
 > Note that the depending on your OS, Python version, and dependencies your results might be slightly differ. However, they
 > should this be similar to the examples in the book. 
 
-## ☁️ 不想一个人对着一个模型？试试 Bloome
+## 🤝 让 YouWare 做你的 AI 工作搭档
 
-[![Bloome — 让 AI agent 组成你的团队](assets/bloome-home.png)](https://bloome.im/app?ref=bbruceyuan&utm_medium=github&utm_source=bbruceyuan-Hands-On-Large-Language-Models-CN-ivor-202607)
+[![YouWare：你的 AI 搭档，随时待命](assets/youware-home.png)](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609)
 
-[Bloome](https://bloome.im/app?ref=bbruceyuan&utm_medium=github&utm_source=bbruceyuan-Hands-On-Large-Language-Models-CN-ivor-202607) 让你从"一个人对着一个模型"升级成"一支会协作的 agent 团队"：把多个 AI agent（Claude、ChatGPT、DeepSeek 等）放进同一个对话，它们自动分工、互相交接、交叉校验，把结果打磨到真正靠谱为止，还能直接在对话里生成表格、文档和可视化看板。零配置、云端运行，网页和手机都能用，配好的 agent 还能一键分享给团队。学大模型、跑实验的路上，多一支随叫随到的 agent 团队。👉 [试试 Bloome](https://bloome.im/app?ref=bbruceyuan&utm_medium=github&utm_source=bbruceyuan-Hands-On-Large-Language-Models-CN-ivor-202607)
+[YouWare](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609) 是你的 AI 工作搭档：把论文 PDF、实验记录、Excel / CSV 数据直接丢进去，说一句需求，它会自己查资料、核对来源、跑数据分析，交回一份能直接用的 PPT、研究报告或表格。内容都能继续编辑，PPT 还能导出 PowerPoint / PDF，组会汇报、技术分享、写综述都用得上。Claude、Gemini、GPT 等模型自动挑选，不用配 API key，网页和手机都能用。学大模型的路上，做材料的活交给 YouWare，时间留给读代码、跑实验。 [免费试试 YouWare](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609)
 
 ## 其他资源
 
