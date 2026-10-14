@@ -55,11 +55,11 @@
 > Note that the depending on your OS, Python version, and dependencies your results might be slightly differ. However, they
 > should this be similar to the examples in the book. 
 
-## 🤝 让 YouWare 做你的 AI 工作搭档
+## 🤝 Renoise：会规划镜头的 AI Agent + 自由编排的画布
 
-[![YouWare：你的 AI 搭档，随时待命](assets/youware-home.png)](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609)
+[![Renoise：面向创作者和企业的 AI 内容工作室](assets/renoise.png)](https://renoise.ai/?utm_medium=github&utm_source=bbruceyuan-llms-zero-to-hero-ivor-202610)
 
-[YouWare](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609) 是你的 AI 工作搭档：把论文 PDF、实验记录、Excel / CSV 数据直接丢进去，说一句需求，它会自己查资料、核对来源、跑数据分析，交回一份能直接用的 PPT、研究报告或表格。内容都能继续编辑，PPT 还能导出 PowerPoint / PDF，组会汇报、技术分享、写综述都用得上。Claude、Gemini、GPT 等模型自动挑选，不用配 API key，网页和手机都能用。学大模型的路上，做材料的活交给 YouWare，时间留给读代码、跑实验。 [免费试试 YouWare](https://www.youware.com/?&utm_medium=github&utm_source=bbruceyuan-LLMs-Zero-to-Hero-ivor-202609)
+[Renoise](https://renoise.ai/?utm_medium=github&utm_source=bbruceyuan-llms-zero-to-hero-ivor-202610) 是一个把 AI Agent 和画布放在同一个工作台里的 AI 视频、图片创作平台。不会写提示词也没关系：用大白话跟 Renoise Agent 说你想拍什么，它会追问细节、写好提示词、把需求拆成一组镜头，先出角色图再喂给后面每个镜头，保证人物不走样；生成前会列清每条任务的参数和要花多少积分，你确认了才提交。生成结果自动铺在旁边的画布上，想自己控场就直接在画布上连线、改节点，把上一镜的尾帧一键抽出来当下一镜的首帧，改好的节点还能拖回对话让 Agent 接着改。底层可选 Seedance、Kling、GPT Image、Nano Banana 等 29 个顶尖模型。学完大模型原理，不妨来看看一个 Agent 是怎么把多模态模型串成一条创作流水线的。 [去 Renoise 试试](https://renoise.ai/?utm_medium=github&utm_source=bbruceyuan-llms-zero-to-hero-ivor-202610)
 
 ## 其他资源
 
